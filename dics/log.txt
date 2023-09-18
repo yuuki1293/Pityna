@@ -1,9 +1,0 @@
-Pityna System Dialogue Log: 2023-07-10 23:07::31
-> こんにちは
-pityna:Pattern> ヘビメタ好き？
-> お腹すいたー
-pityna:Random> ウケるー
-> やあ。
-pityna:Random> 明らかに正しい
-> チョコ
-pityna:Pattern> ギミチョコ！
