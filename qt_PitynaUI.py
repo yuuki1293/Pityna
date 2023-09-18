@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(853, 626)
+        MainWindow.resize(853, 638)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.listWidgetLog = QtWidgets.QListWidget(self.centralwidget)
@@ -56,6 +56,7 @@ class Ui_MainWindow(object):
         self.labelResponce.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.labelResponce.setText("")
         self.labelResponce.setAlignment(QtCore.Qt.AlignCenter)
+        self.labelResponce.setWordWrap(True)
         self.labelResponce.setObjectName("labelResponce")
         self.labelShowImg = QtWidgets.QLabel(self.centralwidget)
         self.labelShowImg.setGeometry(QtCore.QRect(350, 0, 501, 301))
