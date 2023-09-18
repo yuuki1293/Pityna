@@ -25,13 +25,7 @@ class Pityna(object):
         self.count += 1
         log_emotion(self.count, self.emotion, self.fp)
 
-        x = random.randint(0, 100)
-        if x <= 60:
-            self.responder = self.res_pattern
-        elif 61 <= x <= 90:
-            self.responder = self.res_random
-        else:
-            self.responder = self.res_repeat
+        self.responder = self.res_pattern
 
         resp = self.responder.response(input, self.emotion.mood)
         self.dictionary.study(input)
