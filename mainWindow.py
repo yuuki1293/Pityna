@@ -60,22 +60,6 @@ class MainWindow(QtWidgets.QMainWindow):
 
         self.change_looks()
             
-    def closeEvent(self, event):
-        reply = QtWidgets.QMessageBox.question(
-            self,
-            "あのねー",
-            "ランダム辞書を更新してもいい?",
-            buttons = QtWidgets.QMessageBox.Yes | 
-            QtWidgets.QMessageBox.No 
-            )
-        
-        if reply == QtWidgets.QMessageBox.Yes:
-            self.pityna.save()
-            self.writeLog()
-            event.accept()
-        else:
-            event.accept()
-            
     def showResponderName(self):
         self.action = True
         
